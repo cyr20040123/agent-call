@@ -1,0 +1,4 @@
+pexpect>=4.0
+
+[dev]
+pytest>=7

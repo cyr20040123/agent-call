@@ -1,0 +1,9 @@
+{
+    "opencode": {
+        "error_patterns": [
+            "Key limit exceeded",
+            "No payment method",
+            "Upstream idle timeout exceeded"
+        ]
+    }
+}

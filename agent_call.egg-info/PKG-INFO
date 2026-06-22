@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: agent-call
+Version: 0.1.0
+Summary: Unified CLI and Python API for various AI agent chat tools (jiuwenclaw, openclaw, opencode, hermes)
+Requires-Python: >=3.10
+Requires-Dist: pexpect>=4.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7; extra == "dev"
