@@ -22,7 +22,9 @@ from ._simple import SimpleAgent
 from ._jiuwenclaw import JiuwenclawAgent
 from ._openclaw import OpenclawAgent
 from ._opencode import OpencodeAgent
+from ._common import replace_placeholders
 from ._runner import AgentCall, get_available_agents
+from .swarm_runner import SwarmRunner
 
 __all__ = [
     "AgentCall",
@@ -36,4 +38,7 @@ __all__ = [
     "JiuwenclawAgent",
     "OpenclawAgent",
     "OpencodeAgent",
+    # Swarm runner
+    "SwarmRunner",
+    "replace_placeholders",
 ]

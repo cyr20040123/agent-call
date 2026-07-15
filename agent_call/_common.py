@@ -28,6 +28,20 @@ def make_chat_id(now: Optional[datetime] = None) -> str:
     return (now or datetime.now()).strftime("%m%d-%H%M%S")
 
 
+def replace_placeholders(template: str, **kwargs: str) -> str:
+    """Replace all ``<key>`` placeholders in *template* with *kwargs* values.
+
+    Example::
+
+        >>> replace_placeholders("hello <name>, age <age>", name="Alice", age="30")
+        'hello Alice, age 30'
+    """
+    result = template
+    for key, value in kwargs.items():
+        result = result.replace(f"<{key}>", str(value))
+    return result
+
+
 def resolve_output_path(
     output: str | Path | None,
     chat_id: str,
