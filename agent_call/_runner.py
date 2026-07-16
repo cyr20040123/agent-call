@@ -11,6 +11,7 @@ from ._common import make_chat_id, resolve_output_path, resolve_prompt
 from ._dry import DryAgent
 from ._hermes import HermesAgent
 from ._jiuwenclaw import JiuwenclawAgent
+from ._jiuwenswarm import JiuwenswarmAgent
 from ._openclaw import OpenclawAgent
 from ._opencode import OpencodeAgent
 from ._simple import SimpleAgent
@@ -21,6 +22,7 @@ _AGENT_CLASSES: dict[str, Type[BaseAgent]] = {
     "dry": DryAgent,
     "simple": SimpleAgent,
     "jiuwenclaw": JiuwenclawAgent,
+    "jiuwenswarm": JiuwenswarmAgent,
     "openclaw": OpenclawAgent,
     "opencode": OpencodeAgent,
     "hermes": HermesAgent,
@@ -69,7 +71,7 @@ class AgentCall:
         Parameters
         ----------
         agent :
-            Agent name: ``"jiuwenclaw"`` / ``"openclaw"`` / ``"opencode"`` / ``"hermes"``.
+            Agent name: ``"jiuwenclaw"`` / ``"jiuwenswarm"`` / ``"openclaw"`` / ``"opencode"`` / ``"hermes"``.
         workspace_dir :
             Root directory for agent output and workspace. Default: ``./agent_call_workspace``.
             For openclaw, this directory is registered as the native workspace.

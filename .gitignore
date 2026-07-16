@@ -1,0 +1,6 @@
+__pycache__
+*.pyc
+*.log
+test*
+agent_call_workspace/
+.claude/

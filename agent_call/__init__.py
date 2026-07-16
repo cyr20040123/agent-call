@@ -1,6 +1,6 @@
 """agent_call — Unified CLI and Python API for AI agent chat tools.
 
-Supported agents: jiuwenclaw, openclaw, opencode, hermes.
+Supported agents: jiuwenclaw, jiuwenswarm, openclaw, opencode, hermes.
 
 Quick start::
 
@@ -20,6 +20,7 @@ from ._dry import DryAgent
 from ._hermes import HermesAgent
 from ._simple import SimpleAgent
 from ._jiuwenclaw import JiuwenclawAgent
+from ._jiuwenswarm import JiuwenswarmAgent
 from ._openclaw import OpenclawAgent
 from ._opencode import OpencodeAgent
 from ._common import replace_placeholders
@@ -36,6 +37,7 @@ __all__ = [
     "SimpleAgent",
     "HermesAgent",
     "JiuwenclawAgent",
+    "JiuwenswarmAgent",
     "OpenclawAgent",
     "OpencodeAgent",
     # Swarm runner
